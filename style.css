@@ -8,13 +8,13 @@
 
 body {
     font-family:'Hind', Arial, Helvetica, sans-serif;
-    background: url(beanstalk.png);
+    background: url(dot-grid.png);
 }
 
 i {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 a {
@@ -44,7 +44,7 @@ a {
     bottom: 0;
     width: 300px;
     border: 1px solid black;
-    background: url(beanstalk.png);
+    background-image: url(dot-grid.png);
 }
 
 .navbar ul li {
@@ -52,6 +52,11 @@ a {
     line-height: 2;
     border-bottom: 1px solid black;
     padding: 5px 0px
+}
+
+.navbar ul a:hover {
+    text-decoration: underline;
+    text-shadow: 10px 10px 40px gold;
 }
 
 .navbar ul li:last-child {
@@ -62,4 +67,17 @@ a {
 
 .main-section {
     margin-left: 375px;
+}
+
+.main-section p a {
+    font-size: 1rem;
+    margin: 0;
+    color: blue;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    padding: 0;
+}
+
+.main-section ul {
+    margin: 15px 70px;
 }
