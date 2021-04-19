@@ -14,7 +14,7 @@ body {
 i {
     position: fixed;
     left: 0;
-    bottom: 0;
+    top: 0;
 }
 
 a {
@@ -44,7 +44,11 @@ a {
     bottom: 0;
     width: 300px;
     border: 1px solid black;
-    background-image: url(dot-grid.png);
+    background: url(https://www.seriouseats.com/2019/05/20190520-cheesecake-vicky-wasik-34.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment:scroll;
 }
 
 .navbar ul li {
@@ -80,4 +84,26 @@ a {
 
 .main-section ul {
     margin: 15px 70px;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        border: 1px solid black;
+        background-image: url(dot-grid.png);
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        border: 1px solid black;
+        background-image: url(dot-grid.png);
+    }
 }
